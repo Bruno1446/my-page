@@ -1,0 +1,156 @@
+/* Importa fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
+/* Variáveis */
+:root {
+    --primary-color: #870000;
+    --secondary-color: #190a05;
+}
+
+/* Formata o body */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: 100vh;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Formata o header */
+.header-princ {
+    height: 100vh;
+    width: 100%;
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+
+/* Formata os títulos */
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/* Formata a área dos links */
+.medias {
+    margin-top: 1rem;
+    display: flex;
+}
+
+/* Formata os links */
+.redes {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    border: 1px solid #fff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 600ms;
+}
+
+/* Quando o mouse estiver por cima */
+.redes:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+/* Conteúdo principal */
+main {
+    margin: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Formata a área do Sobre */
+#sobre {
+    margin: 0.5rem;
+}
+
+/* Formata o título do sobre */
+.sobre-text>h2 {
+    color: var(--primary-color);
+}
+
+/* Formata a área Serviços */
+#servicos {
+    margin: 0.5rem;
+}
+
+.servicos-text>h2 {
+    color: var(--primary-color);
+}
+
+/* Formata o rodapé */
+footer {
+    height: 3rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-align: center;
+}
+
+/* Área do footer */
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Links do footer */
+.redes-footer {
+    margin-left: 0.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 500ms;
+}
+
+/* Mouse por cima */
+.redes-footer:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+/*Ícones do footer */
+.icone {
+    margin-top: 0.8rem;
+}
+
+/* Responsivo */
+@media screen and (max-width: 540px) {
+
+    .items-header h1,
+    h2 {
+        padding: 1rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    .medias {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        font-size: 2rem;
+    }
+
+    .footer-text a {
+        font-size: 2rem;
+    }
+}
